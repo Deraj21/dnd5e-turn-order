@@ -1,8 +1,42 @@
 @import 'reset.sass'
 
-.App
-  background-color: #BADA55
+body
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  padding-top: 50px
+  box-sizing: border-box
+  font-family: Arial, Helvetica, sans-serif
 
-@import './Toolbar.sass'
-@import './CharacterList.sass'
+button
+  margin: 5px
+  padding: 5px 15px
+  background-color: white
+  border: 1px solid gray
+  border-radius: 3px
+  cursor: pointer
+
+.App
+
+  .toolbar
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+    background-color: whitesmoke
+    border-radius: 5px
+    border: 1px solid black
+    padding: 5px
+
+  .characterList
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: stretch
+    
+    padding: 10px
+    
+
 @import './Character.sass'

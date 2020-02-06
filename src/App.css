@@ -47,20 +47,71 @@ table {
   border-spacing: 0;
 }
 
-.App {
-  background-color: #BADA55;
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.Toolbar {
-  background-color: pink;
-}
-
-.CharacterList {
+button {
+  margin: 5px;
+  padding: 5px 15px;
   background-color: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.App .toolbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px;
+}
+.App .characterList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 10px;
 }
 
 .Character {
-  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 5px 0px;
+}
+.Character input {
+  width: 200px;
+  maxLength: 10;
+  margin: 0px 25px;
+  font-size: 16px;
+  padding: 3px;
+}
+.Character p {
+  font-size: 16px;
+  padding: 3px;
+  width: 200px;
+}
+.Character .init-input {
+  width: 40px;
+}
+.Character .init-p {
+  width: 40px;
 }
 
 /*# sourceMappingURL=App.css.map */
